@@ -1,0 +1,181 @@
+.confession-page {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.confession-page .page-heading {
+  margin-bottom: 28px;
+}
+
+.confession-page .eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #2563eb;
+}
+
+.confession-page .page-heading h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #172554;
+}
+
+.confession-page .page-heading p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.confession-page .confession-create-wrapper {
+  width: 100%;
+}
+
+.confession-page .confession-form {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.confession-page .confession-form-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.confession-page .confession-form-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6ff;
+  font-size: 21px;
+  flex-shrink: 0;
+}
+
+.confession-page .confession-form-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #172554;
+}
+
+.confession-page .confession-form-header p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.confession-page .confession-field {
+  margin-bottom: 20px;
+}
+
+.confession-page .confession-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.confession-page .confession-field textarea {
+  width: 100%;
+  min-height: 180px;
+  resize: vertical;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  color: #172554;
+  background: #ffffff;
+}
+
+.confession-page .confession-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.confession-page .character-info {
+  margin-top: 6px;
+  text-align: right;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.confession-page .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+}
+
+.confession-page .checkbox-label input {
+  width: 16px;
+  height: 16px;
+}
+
+.confession-page .confession-helper {
+  margin: 8px 0 20px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.confession-page .form-success {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #047857;
+  font-size: 13px;
+}
+
+.confession-page .form-error {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.confession-page .confession-submit-button {
+  width: 100%;
+  min-height: 44px;
+  border: 0;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confession-page .confession-submit-button:hover {
+  background: #1d4ed8;
+}
+
+.confession-page .confession-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .confession-page .confession-form {
+    padding: 20px;
+  }
+
+  .confession-page .page-heading h1 {
+    font-size: 24px;
+  }
+}

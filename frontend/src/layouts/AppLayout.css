@@ -1,0 +1,233 @@
+/* =========================
+   APP LAYOUT
+========================= */
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f7fb;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 250px;
+  min-width: 250px;
+
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 100;
+}
+
+.sidebar-logo {
+  height: 72px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-logo h2 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #172554;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  padding: 20px 14px;
+}
+
+.sidebar-menu a {
+  display: flex;
+  align-items: center;
+
+  min-height: 44px;
+
+  padding: 0 14px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  color: #475569;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.sidebar-menu a:hover {
+  background: #f1f5f9;
+  color: #1d4ed8;
+}
+
+.sidebar-menu a.active {
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-weight: 600;
+}
+
+/* =========================
+   MAIN AREA
+========================= */
+
+.main-area {
+  flex: 1;
+
+  margin-left: 250px;
+
+  min-width: 0;
+  min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  height: 72px;
+
+  padding: 0 32px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.header-left h1 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #172554;
+}
+
+.header-left p {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: #64748b;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.profile-avatar {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.profile-info strong {
+  font-size: 14px;
+  color: #172554;
+}
+
+.profile-info span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  padding: 32px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .main-area {
+    margin-left: 210px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .profile-info {
+    display: none;
+  }
+}
